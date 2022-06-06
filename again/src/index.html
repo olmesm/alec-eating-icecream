@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alec eating icecream... again</title>
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Alec eating icecream">
+  <link rel="apple-touch-icon-precomposed" href="assets/logo.png">
+
+  <link rel="manifest" href="/manifest.json">
+
+  <style>
+    html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-image: url("assets/icecream.gif");
+      background-repeat: repeat;
+    }
+
+    body { max-height: 66%; max-width: 66%; }
+    img { width: 100%; }
+  </style>
+</head>
+<body>
+    <img src="assets/alec-eating-icecream-again.webp" onerror="this.onerror=null;this.src='assets/alec-eating-icecream-again.gif';" alt="">
+</body>
+</html>
