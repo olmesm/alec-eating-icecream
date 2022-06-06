@@ -11,5 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Setup Node
         uses: actions/setup-node@v3
-      - run: npx surge ./again/src
-      - run: npx surge ./original/src
+      - run: npx surge ./again/src && npx surge ./original/src
+        env:
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+          SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
